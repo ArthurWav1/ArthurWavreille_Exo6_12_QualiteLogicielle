@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Clean and test
-      run: mvn clean test jacoco:report
+      run: mvn clean test
       working-directory : ./bank-application
       
     - name : Package

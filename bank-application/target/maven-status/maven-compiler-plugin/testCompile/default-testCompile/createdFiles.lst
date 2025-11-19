@@ -1,2 +1,4 @@
 bankAccountApp\BankAccountTest.class
 bankAccountApp\AllTests.class
+test\java\bankAccountApp\bdd\RunBankAccountCucumberTest.class
+test\java\bankAccountApp\bdd\BankAccountBasicSteps.class

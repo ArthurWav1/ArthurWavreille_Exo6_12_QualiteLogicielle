@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="bankAccountApp.AllTests" time="0.109" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="test.java.bankAccountApp.bdd.RunBankAccountCucumberTest" time="0.612" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,7 +57,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="deposit_150_money" classname="bankAccountApp.BankAccountTest" time="0.031"/>
-  <testcase name="withdraw_moneyTest" classname="bankAccountApp.BankAccountTest" time="0.0"/>
-  <testcase name="deposit_minus_150_money" classname="bankAccountApp.BankAccountTest" time="0.0"/>
+  <testcase name="A new account has zero balance" classname="Basic bank account behavior" time="0.125">
+    <system-out><![CDATA[
+Scenario: A new account has zero balance &amp#27;[90m# src/test/resources/features/bank_account_basic.feature:2&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have a new bank account&amp#27;[0m        &amp#27;[90m# test.java.bankAccountApp.bdd.BankAccountBasicSteps.i_have_a_new_bank_account()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI check its balance&amp#27;[0m               &amp#27;[90m# test.java.bankAccountApp.bdd.BankAccountBasicSteps.i_check_its_balance()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe balance should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0.0&amp#27;[0m         &amp#27;[90m# test.java.bankAccountApp.bdd.BankAccountBasicSteps.the_balance_should_be(java.lang.Double)&amp#27;[0m
+]]></system-out>
+  </testcase>
 </testsuite>

@@ -1,0 +1,2 @@
+In BankAccount : the withdrawMoney method had 0% coverage, I choose this one to write a new test and cover this method.
+After the test implementation, the coverage of the method went up to 100% for missed instruction and up to 62% for missed branches (because I didn't write test for every specific cases where we cannot withdraw money).

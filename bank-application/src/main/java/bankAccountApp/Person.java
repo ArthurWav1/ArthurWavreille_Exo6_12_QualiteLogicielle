@@ -1,5 +1,6 @@
 package bankAccountApp;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 //TODO Add a validation to email address to insure that it is a string with a "." imbedded and characters to the right an left
@@ -92,7 +93,7 @@ public class Person {
 	public Person(String accountHolder) throws Exception {
 		Scanner scan = null;
 		try {
-			scan = new Scanner(accountHolder).useDelimiter(DELIM);
+			scan = new Scanner(accountHolder).useDelimiter(DELIM).useLocale(Locale.US);;
 			name = scan.next();
 			gender = scan.next().charAt(0);
 			age = scan.nextInt();

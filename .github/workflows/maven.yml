@@ -30,3 +30,11 @@ jobs:
     - name: Clean and test
       run: mvn clean test jacoco:report
 
+    - name : Package
+      run: mvn package
+
+    - name: Upload Maven target folder
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-target
+        path: target/

@@ -29,12 +29,14 @@ jobs:
         cache: maven
     - name: Clean and test
       run: mvn clean test jacoco:report
-
+      working-directory : ./bank-application
+      
     - name : Package
       run: mvn package
+      working-directory : ./bank-application
 
     - name: Upload Maven target folder
       uses: actions/upload-artifact@v4
       with:
         name: build-target
-        path: target/
+        path: bank-application/target
